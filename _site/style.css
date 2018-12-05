@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(90,90,90);
+  font-size: 1.1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.front {
+  z-index: 100;
+}
+
+.centered {
+  text-align: center;
+}
+
+.down-arrow {
+  position: absolute;
+  left: 48%;
+  bottom: 1rem;
+  top: auto;
+  width: 1.5rem;
+  z-index: 101;
+  font-weight: bold;
+  border: none;
+}
+
+/* TYPOGRAPHY */
+h1, h2, h3 {
+  text-transform: uppercase;
+  color: #3d4149;
+}
+
+h1 {
+  font-size: 5vw;
+  font-weight: 800;
+  color: white;
+}
+
+h1 span {
+  font-size: 3vw;
+}
+
+h2 {
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+  letter-spacing: 3px;
+}
+
+.emphasis {
+  font-size: 3rem;
+  text-transform: none;
+  font-weight: light;
+  letter-spacing: 0;
+}
+
+h3.emphasis {
+  font-size: 2.5rem
+}
+
+h3 {
+  font-weight: normal;
+  letter-spacing: 3px;
+}
+
+a {
+  color: #3d4149;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #3d4149;
+  text-decoration: none;
+  position: relative;
+  top:0;
+  transition: 0.3s;
+}
+
+p a:hover,
+nav a:hover {
+  color: rgb(120,120,120);
+  border-color: rgb(120,120,120);
+  top:2px;
+  position: relative;
+}
+
+p {
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+p span {
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+li {
+  margin: 0.5rem 0;
+  margin-left: 1.5rem;
+  font-weight: 300;
+  padding-left: 1rem;
+}
+
+hr {
+  border: none;
+  border-bottom: 3px solid #3d4149;
+  width: 50px;
+  margin:2rem 0;
+}
+
+.featured hr {
+  border-color: white;
+}
+
+.centered hr {
+  margin: 2rem auto;
+}
+
+section {
+  padding: 5% 10%;
+  position: relative;
+}
+
+.mini-banner {
+  min-height: 80vh;
+  padding: 10%;
+}
+
+.mini-banner.tall {
+  min-height: 100vh;
+}
+
+.no-padding {
+  padding: 0;
+}
+.padded {
+  padding: 10%;
+}
+
+
+.mini-banner,
+.bg-image {
+  background-size: cover;
+  background-position: center;
+  min-height: 30vh;
+}
+.bg-image {
+  padding-bottom: 40%;
+}
+
+.mini-banner [class*=col] {
+  padding: 3% 5%;
+}
+
+.mini-banner .logo {
+  padding: 1%;
+}
+
+.banner {
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("eon-3.jpg");
+  background-attachment: fixed;
+  -webkit-filter: greyscale;
+  background-color: #3d4149;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  position: relative;
+  min-height: 100vh;
+  text-align: center;
+}
+.banner h3 {
+  color: white;
+  margin-top: 1rem;
+}
+
+.banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom right,#282C35,#3d4149);
+  opacity: .3;
+}
+
+.featured {
+  background-image: linear-gradient(to bottom right,#282C35,#3d4149);
+  color: white;
+}
+
+.featured *{
+  color: white;
+  border-color: white;
+}
+
+@media(max-width:700px) {
+  section,
+  .mini-banner,
+  section.padded {
+    padding-bottom: 4rem;
+  }
+  .no-padding {
+    padding-bottom: 0;
+  }
+  .no-padding [class*="-12"] {
+    padding:10%;
+  }
+
+  .mb-light {
+    background-color: white;
+    background-image:none;
+  }
+  .mb-light * {
+    color: #3d4149;
+  }
+
+  .emphasis {
+    font-size: 2rem;
+  }
+
+  h3.emphasis {
+    font-size: 1.5rem;
+  }
+}

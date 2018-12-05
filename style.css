@@ -171,10 +171,10 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("building.jpg");
+  background-image: url("eon-3.jpg");
   background-attachment: fixed;
   -webkit-filter: greyscale;
-  background-color: teal;
+  background-color: #3d4149;
   background-size: cover;
   background-position: center;
   color: white;
@@ -195,7 +195,7 @@ section {
   bottom: 0;
   left: 0;
   background-image: linear-gradient(to bottom right,#282C35,#3d4149);
-  opacity: .6;
+  opacity: .3;
 }
 
 .featured {
