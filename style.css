@@ -44,20 +44,26 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 6vw;
+  font-size: 5vw;
   font-weight: 800;
   color: white;
+}
+
+h1 span {
+  font-size: 3vw;
 }
 
 h2 {
   font-weight: normal;
   margin-bottom: 0.5rem;
+  letter-spacing: 3px;
 }
 
 .emphasis {
   font-size: 3rem;
   text-transform: none;
   font-weight: light;
+  letter-spacing: 0;
 }
 
 h3.emphasis {
@@ -172,6 +178,7 @@ section {
 }
 .banner h3 {
   color: white;
+  margin-top: 1rem;
 }
 
 .banner::before {
