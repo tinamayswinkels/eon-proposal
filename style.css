@@ -31,10 +31,10 @@ img {
   left: 48%;
   bottom: 1rem;
   top: auto;
-  font-size: 1rem;
+  width: 1.5rem;
   z-index: 101;
-  border: 1px solid orange;
   font-weight: bold;
+  border: none;
 }
 
 /* TYPOGRAPHY */
@@ -72,6 +72,7 @@ h3.emphasis {
 
 h3 {
   font-weight: normal;
+  letter-spacing: 3px;
 }
 
 a {
@@ -151,9 +152,14 @@ section {
 .bg-image {
   background-size: cover;
   background-position: center;
+  min-height: 30vh;
 }
+.bg-image {
+  padding-bottom: 40%;
+}
+
 .mini-banner [class*=col] {
-  padding: 5%;
+  padding: 3% 5%;
 }
 
 .mini-banner .logo {
@@ -200,4 +206,34 @@ section {
 .featured *{
   color: white;
   border-color: white;
+}
+
+@media(max-width:700px) {
+  section,
+  .mini-banner,
+  section.padded {
+    padding-bottom: 4rem;
+  }
+  .no-padding {
+    padding-bottom: 0;
+  }
+  .no-padding [class*="-12"] {
+    padding:10%;
+  }
+
+  .mb-light {
+    background-color: white;
+    background-image:none;
+  }
+  .mb-light * {
+    color: #3d4149;
+  }
+
+  .emphasis {
+    font-size: 2rem;
+  }
+
+  h3.emphasis {
+    font-size: 1.5rem;
+  }
 }
