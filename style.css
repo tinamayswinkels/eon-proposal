@@ -220,6 +220,9 @@ section {
   .no-padding [class*="-12"] {
     padding:10%;
   }
+  [class*="grid"] .bg-image {
+    padding-bottom:50%;
+  }
 
   .mb-light {
     background-color: white;
@@ -236,4 +239,16 @@ section {
   h3.emphasis {
     font-size: 1.5rem;
   }
+  .banner {
+    background-attachment: scroll;
+  }
+
+  h1 {
+    font-size: 8vw;
+  }
+  h1 span {
+    display: block;
+    font-size: 4vw;
+  }
+
 }
