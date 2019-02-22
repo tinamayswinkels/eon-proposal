@@ -8,6 +8,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body, html{
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   color: rgb(90,90,90);
