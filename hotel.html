@@ -1,11 +1,20 @@
 ---
 layout: default
 title: Hotel Collaboration
+images:
+  - /images/eonport-44146.jpg
+  - /images/eonport-45699.jpg
+  - /images/eonport-45506.jpg
+  - /images/eonport-45766.jpg
+  - /images/eonport-45985.jpg
+  - /images/eonport-45768.jpg
+  - /images/eonport-45800.jpg
+  - /images/eonport-44093.jpg
 ---
   <!-- Section #1 -->
   <section class="banner" style="background-image:url('/images/hotel.jpg');">
     <div class="front">
-       <h1> Eyes of a Nomad </h1>
+       <h1> Photography & Promotion </h1>
        <h3> Collaboration Proposal </h3>
     </div>
     <a class="down-arrow" href="#section2">
@@ -99,5 +108,17 @@ title: Hotel Collaboration
           <li> Promotion in instagram posts on each persons instagram account (total 8 posts) reaching a total of almost 200,000 people.</li>
         </ul>
     </div>
+
+  </section>
+
+  <section class="gallery grid">
+
+    {% for image in page.images %}
+
+    <div class="col-3_xs-6">
+      <div class="bg-image" style="background-image:url('{{image}}')"></div>
+    </div>
+
+    {% endfor %}
 
   </section>

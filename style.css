@@ -212,6 +212,19 @@ section {
   border-color: white;
 }
 
+.gallery {
+  padding: 0;
+}
+
+.gallery [class*="col"] {
+  padding:0;
+}
+
+.gallery .bg-image {
+  padding-bottom: 100%;
+  border: 2px solid white;
+}
+
 @media(max-width:700px) {
   section,
   .mini-banner,
@@ -226,6 +239,9 @@ section {
   }
   [class*="grid"] .bg-image {
     padding-bottom:50%;
+  }
+  .gallery .bg-image {
+    padding-bottom: 100%;
   }
 
   .mb-light {
