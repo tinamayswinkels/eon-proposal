@@ -1,0 +1,127 @@
+---
+layout: default
+title: Agoda
+images:
+  - /images/eonport-44146.jpg
+  - /images/eonport-45699.jpg
+  - /images/eonport-45506.jpg
+  - /images/eonport-45766.jpg
+  - /images/eonport-45985.jpg
+  - /images/eonport-45768.jpg
+  - /images/eonport-45800.jpg
+  - /images/eonport-44093.jpg
+---
+  <!-- Section #1 -->
+  <section class="banner" style="background-image:url('/images/hotel.jpg');">
+    <div class="front">
+       <h1> Agoda <span>x</span> Japan </h1>
+       <h3> Collaboration Proposal </h3>
+    </div>
+    <a class="down-arrow" href="#section2">
+      <img src="down-arrow-white.svg" />
+    </a>
+  </section>
+
+  <!-- - - - Section #2 - - - - - - - - -->
+  <section class="mini-banner" id="section2">
+    <div class="col-12-middle">
+      <h2 class="emphasis editable">
+       Oh hey Agoda. Let's make some magic together.
+      </h2>
+    </div>
+    <a class="down-arrow" href="#section3">
+      <img src="down-arrow.svg" />
+    </a>
+  </section>
+
+<!-- - - - Section #3 - - - - - - - - -->
+  <section id="section3" class="mini-banner tall grid no-padding featured">
+
+    <div class="col-7_sm-12 bg-image" style="background-image:url('/images/rachel-hotel.jpg')">
+    </div>
+    <div class="col-5_sm-12-middle padded">
+      <h2 class="emphasis editable"> We've got a vision.</h2>
+      <br />
+      <p> We're a group of content creators heading on a press trip to Japan to explore an off-the-beaten path itinerary -- starting with a week of snowboarding in Niseko, and then road tripping through the country. </p>
+      <br />
+      <p>We would love to stay exclusively in your properties, capturing photo & video content for your social media as well as promoting Agoda to our audiences. </p>
+    </div>
+
+    <a class="down-arrow" href="#section4">
+      <img src="down-arrow-white.svg" />
+    </a>
+
+  </section>
+
+  <!-- - - - Section #4 - - - - - - - - -->
+
+  <section class="grid mini-banner" id="section4">
+
+    {% include about-group.html %}
+
+    <a class="down-arrow" href="#section5">
+      <img src="down-arrow.svg" />
+    </a>
+
+  </section>
+
+  <!-- - - - Section #5 - - - - - - - - -->
+
+  <section class="padded featured grid centered" id="section5">
+
+    {% include group-stats.html %}
+
+    <a class="down-arrow" href="#section6">
+      <img src="down-arrow-white.svg" />
+    </a>
+
+  </section>
+
+  <!-- - - - Section #6 - - - - - - - - -->
+
+  <section id="section6" class="mini-banner tall grid no-padding mb-light featured">
+    <div class="col-5_sm-12-middle padded">
+      <h2 class="emphasis editable"> Japan is one of the hottest destinations in Asia at the moment. We want to help you make Agoda the only obvious choice. </h2>
+    </div>
+  <div class="col-7_sm-12 bg-image" style="background-image:url('eon-1.jpg')">
+  </div>
+
+  <a class="down-arrow" href="#section7">
+    <img src="down-arrow-white.svg" />
+  </a>
+
+  </section>
+
+  <!-- - - - Section #7 - - - - - - - - -->
+
+  <section id="section7" class="mini-banner grid">
+
+    <div class="col-4_sm-12">
+      <h2 class="editable">Our Pitch </h2>
+    </div>
+    <div class="col-8_sm-12 editable">
+        <p> We'll be exploring Japan for 2 weeks from the 5th March - 19th March and would love to partner with you for our accomodation needs. In exchange, we could offer ... </p>
+        <ul>
+          <li> 15x high resolution professionally edited photos of Japan for your social media & web use. </li>
+          <li> 15x high resolution professionally edited photos of each villa or property for yours and their social media & web use. </li>
+          <li> 1x 30 second promotional video of each the villa or property </li>
+          <li> 1x 30 second promotional video of travelling in Japan with Agoda </li>
+          <li> Mention in a minimum of 4 separate instagram stories on each persons instagram account (total 16 stories) </li>
+          <li> 2 dedicated instagram posts tagging @agoda on each persons instagram account (total 8 posts) </li>
+        </ul>
+    </div>
+
+  </section>
+
+
+    <section class="gallery grid">
+
+      {% for image in page.images %}
+
+      <div class="col-3_xs-6">
+        <div class="bg-image" style="background-image:url('{{image}}')"></div>
+      </div>
+
+      {% endfor %}
+
+    </section>
