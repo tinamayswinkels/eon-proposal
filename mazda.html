@@ -1,6 +1,16 @@
 ---
 layout: default
 title: Mazda
+images:
+  - /images/car1.jpeg
+  - /images/car3.jpeg
+  - /images/car2.jpeg
+  - /images/car-iceland.jpeg
+  - /images/car5.jpeg
+  - /images/car9.jpeg
+  - /images/car4.jpeg
+  - /images/car7.jpeg
+instagram: false
 ---
   <!-- Section #1 -->
   <section class="banner" style="background-image:url('car-1.jpeg');">
@@ -35,7 +45,7 @@ title: Mazda
       <br />
       <p> We're a group of content creators heading on a press trip to Japan to explore an off-the-beaten path itinerary -- together we can turn it into an epic road trip. </p>
       <br />
-      <p>For one week in March 2019, we would cruise around Japan in a Mazda rental car capturing photo & video content for your social media as well as promoting Mazda to our audiences. </p>
+      <p>For one week in March 2019, we would cruise around Japan in a Mazda  car capturing photo & video content for your social media as well as promoting Mazda to our audiences. </p>
     </div>
 
     <a class="down-arrow" href="#section4">
@@ -74,7 +84,7 @@ title: Mazda
     <div class="col-5_sm-12-middle padded">
       <h2 class="emphasis editable"> From the streets of Tokyo to the slopes of Mt Fuji, we want to see it all in a Mazda rental car.</h2>
     </div>
-  <div class="col-7_sm-12 bg-image" style="background-image:url('eon-1.jpg')">
+  <div class="col-7_sm-12 bg-image" style="background-image:url('/images/car8.jpeg')">
   </div>
 
   <a class="down-arrow" href="#section7">
@@ -91,7 +101,7 @@ title: Mazda
       <h2 class="editable">Our Pitch </h2>
     </div>
     <div class="col-8_sm-12 editable">
-        <p> We'll be exploring Japan for 1 week starting the 13th March and would love to do it in as a road trip. In exchange for providing a rental car for 1 week + fuel costs we could offer ... </p>
+        <p> We'll be exploring Japan for 1 week starting the 13th March and would love to do it in as a road trip. In exchange for providing a rental car for 1 week + fuel costs we could offer ...  </p>
         <ul>
           <li> 15x high resolution professionally edited photos </li>
           <li> 1x 30 second video promotional video of the road trip </li>
@@ -99,5 +109,16 @@ title: Mazda
           <li> 2 dedicated instagram posts tagging @Mazda on each persons instagram account (total 8 posts) </li>
         </ul>
     </div>
+
+  </section>
+  <section class="gallery grid">
+
+    {% for image in page.images %}
+
+    <div class="col-3_xs-6">
+      <div class="bg-image" style="background-image:url('{{image}}')"></div>
+    </div>
+
+    {% endfor %}
 
   </section>
