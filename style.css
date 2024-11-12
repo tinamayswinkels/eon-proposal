@@ -64,7 +64,7 @@ h2 {
 }
 
 .emphasis {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   text-transform: none;
   font-weight: light;
   letter-spacing: 0;
@@ -151,6 +151,21 @@ section {
   padding: 10%;
 }
 
+.p-1 {
+  padding: 1rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+
+.logo-bw {
+  filter: brightness(10) grayscale(1);
+}
+
+.logo-bw-2 {
+  filter: invert(1) grayscale(1);
+}
+
 
 .mini-banner,
 .bg-image {
@@ -161,6 +176,8 @@ section {
 .bg-image {
   padding-bottom: 40%;
 }
+
+
 
 .mini-banner [class*=col] {
   padding: 3% 5%;
@@ -221,11 +238,28 @@ section {
 }
 
 .gallery .bg-image {
-  padding-bottom: 100%;
+  padding-bottom: 120%;
   border: 2px solid white;
 }
 
 @media(max-width:700px) {
+  .mob-hide {
+
+  display: none;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.p-2 {
+  padding: 1rem
+}
+
+  .emphasis {
+
+  }
+
   section,
   .mini-banner,
   section.padded {
