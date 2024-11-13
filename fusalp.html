@@ -1,21 +1,26 @@
 ---
 layout: default
-title: Peak Performance 
-images:
-  - /images/boots.jpg
-  - /images/north-face4.jpg
-  - /images/rachelcar.jpg
-  - /images/north-face3.jpg
-  - /images/north-face5.JPG
-  - /images/north-face2.jpg
+title: Fusalp
+images-1:
   - /images/gandys.jpg
-  - /images/glacier.jpg
+  - /images/tina-snow.jpg
+  - /images/rb-7.jpg
+  - /images/rb-8.jpg
+images-2:
+  - /images/gallery-1.jpg
+  - /images/gallery-2.jpg
+  - /images/gallery-3.jpg
+  - /images/gallery-4.jpg
+  - /images/gallery-5.jpg
+  - /images/gallery-6.jpg
+  - /images/gallery-7.jpg
+  - /images/gallery-8.jpg
 instagram: false 
 ---
 <!-- Section #1 -->
 <section class="banner" style="background-image:url('/images/gandys-gif.gif');">
   <div class="front">
-     <h1> Peak Performance </h1>
+     <h1> Fusalp </h1>
      <h3> Collaboration Proposal </h3>
   </div>
   <a class="down-arrow" href="#section2">
@@ -38,12 +43,12 @@ instagram: false
 <!-- - - - Section #3 - - - - - - - - -->
 <section id="section3" class="mini-banner tall grid no-padding featured">
 
-  <div class="col-7_sm-12 bg-image" style="background-image:url('/images/gandys-2.jpg'); background-position: 50% 17%;">
+  <div class="col-7_sm-12 bg-image" style="background-image:url('/images/eon-snow-2.jpg'); background-position: 50% 75%;">
   </div>
   <div class="col-5_sm-12-middle padded">
-    <h2 class="emphasis editable"> Let us capture stunning visuals of Peak Performance in Japan.</h2>
+    <h2 class="emphasis editable"> Let us capture stunning visuals of Fusalp in Japan.</h2>
     <br />
-    <p> We're heading on a road trip through the powder triangle of Japan & we would love to work together capturing impactful photo & video content of Peak Performance technical gear along the way.   </p>
+    <p> We're heading on a road trip through the powder triangle of Japan & we would love to work together capturing impactful photo & video content of Fusalp technical gear along the way.   </p>
     <br />
     <p>Whether it's carving up the pristine slopes of the mountain, or wandering through picturesque Japanese towns we can capture content that leverages our creative vision and is perfectly tailored to your audience and brand -- all the impact of an international destination campaign with every little detail handled for you. </p>
   </div>
@@ -53,6 +58,19 @@ instagram: false
   </a>
 
 </section>
+
+<section class="gallery grid">
+
+  {% for image in page.images-1 %}
+
+  <div class="col-3_xs-6">
+    <div class="bg-image portrait" style="background-image:url('{{image}}')"></div>
+  </div>
+
+  {% endfor %}
+
+</section>
+
 
 <!-- - - - Section #4 - - - - - - - - -->
 
@@ -96,9 +114,9 @@ instagram: false
 
 <section id="section6" class="mini-banner tall grid no-padding mb-light featured">
   <div class="col-5_sm-12-middle padded mob-hide">
-    <h2 class="emphasis editable"> Peak Performance + our skills + Japan's epic landscapes is a perfect combination.  </h2>
+    <h2 class="emphasis editable"> Fusalp + our skills + Japan's epic landscapes is a perfect combination.  </h2>
   </div>
-<div class="col-7_sm-12 bg-image" style="background-image:url('/images/iceland.jpg'); ">
+<div class="col-7_sm-12 bg-image" style="background-image:url('/images/eon-snow-1.jpg'); ">
 </div>
 
 <a class="down-arrow" href="#section7">
@@ -107,36 +125,8 @@ instagram: false
 
 </section>
 
-<section class="grid mini-banner" id="section4">
 
-  <div class="col-4_sm-12">
-    <h2 class="editable">Our Creative Agency</h2>
 
-  </div>
-  <div class="col-8_sm-12 editable">
-    <p> We run a professional creative agency, <a target="_blank" href="http://instagram.com/kelapacreative"> @kelapacreative </a> that works with clients from all over the world to deliver high calibre content production, from e-commerce & editorials to destination campaigns. We handle everything in-house from strategy & creative direction, to finding the perfect styling & prop curation and location scouting to ensure our content isn't just beautiful but also resonates deeply with the target audience of every brand we work with.  </p>
-  </div>
-  <div class="col-4_sm-12 editable">
-    <h2>Our crew </h2>
-  </div>
-  <div class="col-8_sm-12 editable">
-    <p> Emilio (<a target="_blank" href="http://instagram.com/eyesofanomad"> @eyesofanomad </a>) is our lead photographer & videographer with a passion for visual storytelling. He specialises in working with luxury travel & high end fashion brands, and his work has been featured by BBC, NY Times, CNN and Discovery. </p>
-    <p> Rachel (<a target="_blank" href="http://instagram.com/rachelbowler_"> @rachelbowler_ </a>) is a model, creative director and adventurer who has travelled the world creating destination campaigns and content for brands such as Jack Wolfskin, Carghoppers & Honda. For this campaign Rachel would both be featuring in the campaign as the lead model, and handling the styling and creative direction of the shoot. </p>
-    <p> Tina <a target="_blank" href="http://instagram.com/hellotinamay"> @hellotinamay </a> is the director of our creative agency and producer on shoots, ensuring a seamless experience for our clients that not only delivers stunning visuals but ensures they are impactful and on-brand. Tina will also be featured as talent in the campaign and has experience modelling for a range of international and travel brands.</p>
-  </div>
-  <div class="col-4_sm-12 editable">
-    <h2>The experience you need  </h2>
-  </div>
-  <div class="col-8_sm-12 editable">
-    <p> We collectively have experience working with select brands from all over the world creating content that tells a story. Some of our past clients include Regent Hotels, Booking.com, Honda, St Regis, Corona and we understand how to deliver content that ticks all the boxes for your marketing needs.</p>
-    <p> Being a part of a full-service creative agency, we have experience not just shooting content, but all the strategic direction, coordination, and production management needed to handle this project from start to finish.</p>
-  </div>
-
-  <a class="down-arrow" href="#section5">
-    <img src="/images/down-arrow.svg" />
-  </a>
-
-</section>
 
 <!-- - - - Section #5 - - - - - - - - -->
 
@@ -171,9 +161,44 @@ instagram: false
 </section>
 
 
+
+<section class="grid mini-banner" id="section4">
+
+  <div class="col-4_sm-12">
+    <h2 class="editable">Our Creative Agency</h2>
+
+  </div>
+  <div class="col-8_sm-12 editable">
+    <p> We run a professional creative agency, <a target="_blank" href="http://instagram.com/kelapacreative"> @kelapacreative </a> that works with clients from all over the world to deliver high calibre content production, from e-commerce & editorials to destination campaigns. We handle everything in-house from strategy & creative direction, to finding the perfect styling & prop curation and location scouting to ensure our content isn't just beautiful but also resonates deeply with the target audience of every brand we work with.  </p>
+  </div>
+  <div class="col-4_sm-12 editable">
+    <h2>Our crew </h2>
+  </div>
+  <div class="col-8_sm-12 editable">
+    <p> Emilio (<a target="_blank" href="http://instagram.com/eyesofanomad"> @eyesofanomad </a>) is our lead photographer & videographer with a passion for visual storytelling. He specialises in working with luxury travel & high end fashion brands, and his work has been featured by BBC, NY Times, CNN and Discovery. </p>
+    <p> Rachel (<a target="_blank" href="http://instagram.com/rachelbowler_"> @rachelbowler_ </a>) is a model, creative director and adventurer who has travelled the world creating destination campaigns and content for brands such as Jack Wolfskin, Carghoppers & Honda. For this campaign Rachel would both be featuring in the campaign as the lead model, and handling the styling and creative direction of the shoot. </p>
+    <p> Tina <a target="_blank" href="http://instagram.com/hellotinamay"> @hellotinamay </a> is the director of our creative agency and producer on shoots, ensuring a seamless experience for our clients that not only delivers stunning visuals but ensures they are impactful and on-brand. Tina will also be featured as talent in the campaign and has experience modelling for a range of international and travel brands.</p>
+  </div>
+  <div class="col-4_sm-12 editable">
+    <h2>The experience you need  </h2>
+  </div>
+  <div class="col-8_sm-12 editable">
+    <p> We collectively have experience working with select brands from all over the world creating content that tells a story. Some of our past clients include Regent Hotels, Booking.com, Honda, St Regis, Corona and we understand how to deliver content that ticks all the boxes for your marketing needs.</p>
+    <p> Being a part of a full-service creative agency, we have experience not just shooting content, but all the strategic direction, coordination, and production management needed to handle this project from start to finish.</p>
+  </div>
+
+  <a class="down-arrow" href="#section5">
+    <img src="/images/down-arrow.svg" />
+  </a>
+
+</section>
+
+
+
+
 <section class="gallery grid">
 
-  {% for image in page.images %}
+  {% for image in page.images-2 %}
 
   <div class="col-3_xs-6">
     <div class="bg-image portrait" style="background-image:url('{{image}}')"></div>
